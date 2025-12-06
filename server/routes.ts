@@ -7,13 +7,13 @@ import type { Settings, WSMessage } from "@shared/schema";
 // the newest OpenAI model is "gpt-5" which was released August 7, 2025. do not change this unless explicitly requested by the user
 let openai: OpenAI | null = null;
 
-if (process.env.OPENAI_API_KEY) {
-  openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+if (process.env.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) {
+  openai = new OpenAI({ apiKey: process.env.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 });
 } else {
   console.warn("OPENAI_API_KEY not set - running in demo mode without AI capabilities");
 }
 
-const deepseekApiKey = process.env.DEEPSEEK_API_KEY;
+const deepseekApiKey = process.env.sk-ae961a7509af4f3c9e745bab64050f5f;
 const deepseekBaseUrl = "https://api.deepseek.com";
 
 interface ClientState {
