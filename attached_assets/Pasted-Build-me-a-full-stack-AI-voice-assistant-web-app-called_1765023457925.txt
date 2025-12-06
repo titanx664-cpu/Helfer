@@ -1,0 +1,123 @@
+Build me a full-stack AI voice assistant web app called “Helfer”.
+It must:
+
+1. Voice Wake Phrase
+
+Continuously listen (hot-mic style) for the phrase:
+“Helfer, wake up”
+
+After detecting it, the assistant should activate and start listening for commands.
+
+2. Speech-to-Text
+
+Convert user speech to text using:
+
+OpenAI Realtime API (preferred)
+OR
+
+Deepgram / Web Speech API fallback
+
+3. Text-to-Speech
+
+Every response from the AI should be returned as audio, NOT only text.
+
+Use:
+
+OpenAI TTS
+OR
+
+ElevenLabs (if available)
+
+4. Brain (AI Model Combination)
+
+Use a hybrid architecture:
+
+ChatGPT (GPT-4.1 / GPT-5 when available) for reasoning, planning, multitasking
+
+DeepSeek R1 for:
+
+advanced reasoning
+
+long-term memory processing
+
+deep problem-solving
+
+The two models should be combined as follows:
+
+User speaks → STT → text
+
+Query is processed through DeepSeek R1 first
+
+ChatGPT refines & formats final output
+
+Output sent to TTS and spoken aloud
+
+5. Chatbox UI
+
+Create a modern neon sci-fi styled chat interface:
+
+Left: chat messages
+
+Right: Helfer avatar indicator (listening/processing/speaking)
+
+Input field + mic button
+
+Showcase full message history
+
+Dark theme, glowing colors, animations
+
+6. Core Features
+
+Voice activation (“Helfer, wake up”)
+
+AI-generated speech responses
+
+Real-time listening indicator
+
+Switch between continuous listening vs button mode
+
+Chatbox with timestamps
+
+Built using:
+HTML, CSS, JS (front-end)
+Node.js + Express (backend)
+
+WebSockets for real-time communication
+
+7. Files to generate
+
+index.html (UI + chatbox + mic button + visualizers)
+
+style.css (full neon theme)
+
+script.js (wake word detection + audio handling + WebSocket connection)
+
+server.js (Node backend + AI model routing + TTS + STT)
+
+package.json (all dependencies)
+
+8. Additional Enhancements
+
+Add a waveform visualizer when Helfer is speaking
+
+Add a pulsing ring animation when wake phrase is detected
+
+Add a settings page to choose:
+
+voice gender
+
+voice speed
+
+continuous listening ON/OFF
+
+9. Deployment
+
+Code must run fully on Replit
+
+No local GPU requirements
+
+Include clear instructions at the top of the backend file for inserting API keys
+
+Use Web Audio API for playing AI-generated speech
+
+END OF PROMPT
